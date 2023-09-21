@@ -1,0 +1,61 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d5d5d5;
+    font-family: Helvetica, sans-serif;
+
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: #d5d5d5;
+}
+
+
+header{
+    background-color: #023e6f;
+    box-shadow: 1px 1px 5px 0px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border: 3px solid #000; 
+    min-height: 3em;
+}
+
+#luffy{
+    width: 50%;
+}
+
+
+li:hover{
+    
+    background-color: lightblue;
+    > a {
+        color: #023e6f;
+    }
+
+}
+/* list in nav */
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ /* list items in nav*/
+nav li {
+    display: inline-block;
+    padding: 0 30px;
+    margin: 0 20px;
+}
+
