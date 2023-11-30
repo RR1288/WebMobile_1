@@ -1,61 +1,204 @@
+* { margin: 0px; padding: 0px; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: sans-serif;
+    background-color: #f2faff;
 }
 
-body{
-    background-color: #d5d5d5;
-    font-family: Helvetica, sans-serif;
-
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-
-}
-
-a, a:visited{
-    text-decoration: none;
-    color: #d5d5d5;
-}
-
-
-header{
-    background-color: #023e6f;
-    box-shadow: 1px 1px 5px 0px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    border: 3px solid #000; 
-    min-height: 3em;
-}
-
-#luffy{
-    width: 50%;
-}
-
-
-li:hover{
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
     
-    background-color: lightblue;
-    > a {
-        color: #023e6f;
+}
+
+nav {
+    text-align: center;
+    background: linear-gradient(180deg, rgba(8,59,77,1) 0%, rgba(9,19,23,1) 50%, rgba(0,0,0,1) 100%);
+    margin: 0;
+    padding: 0px;
+}
+
+nav ul li {
+    flex-basis: 25%;
+    cursor: pointer;
+}
+
+nav ul li a{
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.home-menu{
+    display: flex;
+    align-items: center;
+}
+
+#hamburger {
+    float: right;
+    border: 0;
+    padding: 0;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+#hamburger div {
+    border-radius: 3px;
+    height: 5px;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #ffffff;
+}
+
+.fa{
+    font-size: 2.5em !important;
+    padding-right: 15px;
+    color: rgb(0, 0, 0);
+}
+
+header, footer{
+    margin: 0;
+    padding: 10px 25px;
+    text-align: center;
+    color: #f2faff;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,59,77,1) 50%, rgba(14,74,96,1) 75%, rgba(4,28,36,1) 100%);
+}
+
+p {
+    margin: 20px 25px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-family: 'Gafata', sans-serif;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    padding: 10px 25px;
+}
+
+
+
+
+
+
+h1, h3, h4 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+h3 {
+    font-size: 1.75em;
+    margin-top: 30px;
+}
+
+h4 {
+    margin-top: 50px;
+    font-size: 1.25em;
+}
+
+
+/*
+title
+
+*/
+#title {
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav ul li:hover {
+    background-color: #0d6684;
+}
+
+.author_content {
+    display: flex;
+    align-items: center;
+}
+
+.descartes .author_content {
+    flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width: 750px) {
+    #hamburger {
+        display: block;
+    }
+    nav {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        display: none;
+        transition: display 0.5s;
+        transition: height 0.5s;
+    }
+    nav ul li {
+        flex-basis: 100%;
+    }
+    nav.shown {
+        height: auto;
+        display: block;
     }
 
-}
-/* list in nav */
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
- /* list items in nav*/
-nav li {
-    display: inline-block;
-    padding: 0 30px;
-    margin: 0 20px;
-}
+    .author_content {
+        display: block;
+        text-align: center;
+    }
 
+    #title h2{
+        display: none;
+    }
+    
+    #title h1{
+        font-size: 1.5em;
+    }
+
+    #title {
+        height: 50px;
+        width: 85%;
+        background-color: #062732;
+        border-radius: 5%;
+        color: rgb(255, 255, 255);
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    header{
+        text-align: start;
+        margin: 0;
+        padding: 10px 25px;
+        color: #f2faff;
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,59,77,1) 50%, rgba(14,74,96,1) 75%, rgba(4,28,36,1) 100%);
+    }
+
+    .fa{
+        color: rgb(255, 255, 255);
+    }
+    
+
+}

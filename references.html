@@ -1,37 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
         <title>References</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./styles/references.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gafata&family=Julius+Sans+One&family=Kaushan+Script&family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
-            <!--navbar-->
-            <nav>
-                <ul>
-                    <li><a href="./fake_news.html">Fake News</a></li>
-                    <li><a href="./bots.html">How do bots work?</a></li>
-
-                    <li><a href="./index.html">HOME</a></li>
-
-                    <li><a href="./how_to.html">How to recognize it?</a></li>
-                    <li><a href="./references.html">References</a></li>
-                </ul>
-            </nav>
+            <div id="title-small">
+                <h1>What's happening?</h1>
+                <div class="home-menu">
+                    <a href="./index.html"><i class="fa fa-home"></i></a>
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </header>
-        <main>
-            <h1>References</h1>
+        <nav>
             <ul>
-                <li>Ref 1</li>
-                <li>Ref 2</li>
-                <li>Ref 3</li>
-                <li>Ref 4</li>
-                <li>Ref 5</li>
-             
+                <li><a href="./fake_news.html">Fake News</a></li>
+                <li><a href="./bots.html">How do bots work?</a></li>
+                <li id="center">
+                    <div id="title">
+                        <h1>What's happening?</h1>
+                        <div class="home-menu">
+                            <a href="./index.html"><i class="fa fa-home"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./recognize_it.html">How to recognize it?</a></li>
+                <li><a href="./references.html">References</a></li>
             </ul>
+        </nav>
+        <main>
+            <h3>References</h3>
+            <div class="ref">
+                <ul>
+                    <li><p>Baptista, J. P., & Gradim, A. (2020). Understanding Fake News Consumption: A Review. Social Sciences, 9(10), 185. <span class="link">https://doi.org/10.3390/socsci9100185</span></p>
+                    <li><p>Beauvais, C. (2022). Fake news: Why do we believe it? Joint Bone Spine, 89(4), 105371.<span class="link">https://doi.org/10.1016/j.jbspin.2022.105371</span></p>
+                    <li><p>Chatfield, T. (2022). The man rethinking the definition of reality - BBC Future. <span class="link">https://www.bbc.com/future/article/20220216-the-man-rethinking-the-definition-of-reality</span></p>
+                    <li><p>Himelein-Wachowiak, M., Giorgi, S., Devoto, A., Rahman, M., Ungar, L., Schwartz, H. A., Epstein, D. H., Leggio, L., & Curtis, B. (2021). Bots and Misinformation Spread on Social Media: Implications for COVID-19. Journal of Medical Internet Research, 23(5), e26933. <span class="link">https://doi.org/10.2196/26933</span></p>
+                    <li><p>Kiely, E., & Robertson, L. (2016). How to Spot Fake News - FactCheck.org. <span class="link">https://www.factcheck.org/2016/11/how-to-spot-fake-news/</span></p>
+                    <li><p>Smith, R., & Dotto, C. (2019). The not-so-simple science of social media “bots.” <span class="link">https://firstdraftnews.org/articles/the-not-so-simple-science-of-social-media-bots/</span></p>
+                    <li><p>Wardle, C. (2017). Fake news. It&#39;s complicated<span class="link">https://firstdraftnews.org/articles/the-not-so-simple-science-of-social-media-bots/</span></p>
+                </ul>
+            </div>
         </main>
         <footer>
-
+            <div class="copyright">
+                &copy;
+                Rubi Rojas
+            </div>
+            <div class="contact">
+                <span>Contact</span>
+                <span id="phone">Phone: 777-777-7777</span>
+                <span id="email">Email: ritchie@rit.edu</span>
+            </div>
         </footer>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

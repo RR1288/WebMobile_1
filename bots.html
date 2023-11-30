@@ -1,30 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
-        <title>References</title>
+        <title>How do bots work?</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./styles/bots.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gafata&family=Julius+Sans+One&family=Kaushan+Script&family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
-            <!--navbar-->
-            <nav>
-                <ul>
-                    <li><a href="./fake_news.html">Fake News</a></li>
-                    <li><a href="./bots.html">How do bots work?</a></li>
-
-                    <li><a href="./index.html">HOME</a></li>
-
-                    <li><a href="./how_to.html">How to recognize it?</a></li>
-                    <li><a href="./references.html">References</a></li>
-                </ul>
-            </nav>
+            <div id="title-small">
+                <h1>What's happening?</h1>
+                <div class="home-menu">
+                    <a href="./index.html"><i class="fa fa-home"></i></a>
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </header>
+        <nav>
+            <ul>
+                <li><a href="./fake_news.html">Fake News</a></li>
+                <li><a href="./bots.html">How do bots work?</a></li>
+                <li id="center">
+                    <div id="title">
+                        <h1>What's happening?</h1>
+                        <div class="home-menu">
+                            <a href="./index.html"><i class="fa fa-home"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./recognize_it.html">How to recognize it?</a></li>
+                <li><a href="./references.html">References</a></li>
+            </ul>
+        </nav>
         <main>
-            <h1>BOTS</h1>
+            <h3>How do bots work?</h3>
+            <h4>What is a bot?</h4>
+            <div class="definition">
+                <p>Bots are automated entities, often purchasable in bulk from businesses within a growing shadow economy specialized in online influence. These digital agents execute predetermined tasks using code snippets, making them a pivotal part of various online activities. Certain social media platforms, like Twitter, have historically accommodated the automation of accounts, where even legitimate users, including journalists, academics, companies, and everyday individuals, employ bots to streamline their daily online operations. Notably, some developers invest significant time in crafting bots to appear authentic before selling them to the highest bidder. (Smith & Dotto, 2019)</p>
+                <figure class="right">
+                    <img src="./img/chatbot.png" alt="Chatbots in social media">
+                    <figcaption>Source: Appinventiv (2022)</figcaption>
+                </figure>
+            </div>
+            <figure class="accounts">
+                <img src="./img/buy_bots.png" alt="Facebook fake accounts to be bought in bulk">
+                <figcaption>Source: First Draft (2019)</figcaption>
+            </figure>
+            <div class="bots_rol">
+                <p>Bots play a substantial role in amplifying and disseminating misinformation, encompassing fake news and false conspiracy theories. They swiftly retweet misleading articles, facilitating their rapid spread, with a considerable portion of content from low-credibility sources likely originating from bots. These automated agents employ tactics like mentioning influential figures, such as political personalities, to link to false or misleading content in the hope of these figures sharing it, thus enhancing its reach and perceived credibility. Even verified Twitter users, including celebrities, have been found to contribute to the dissemination of COVID-19-related misinformation. Notably, the removal of former President Donald Trump from the platform led to a significant reduction in false claims about the 2020 election.</p>
+                <p>Surprisingly, humans often struggle to differentiate social bots from genuine accounts, rendering them susceptible to the spread of misinformation. Research indicates that humans retweet both bots and other humans at similar rates, particularly concerning low-credibility content. Fake news articles tend to propagate faster on platforms like Twitter because humans are more inclined to retweet them than bots. This raises concerns about the potential exploitation of intelligent social bots for mass deception or political manipulation.</p>
+                <p>In the realm of political discourse, bots have infiltrated online discussions, evident through their substantial presence in political tweets during the 2016 U.S. presidential election. Moreover, unverified accounts, which may potentially be bots, have played a role in sharing fake or highly biased news articles related to election campaigns. Bots have also engaged in disseminating misinformation during political campaigns, employing tactics like hashtag hijacking and flagging legitimate content from opponents to disrupt their messaging. These findings underscore the pivotal role of bots in shaping online political narratives, while highlighting the challenges in combating the spread of misinformation. (Himelein-Wachowiak et al., 2021)</p>
+                <h3>Social media bot uses</h3>
+                <div class="bot_uses">
+                    <div class="bot_uses-example">
+                        <h5>Commercial activity</h5>
+                        <p>Social media bots facilitate company-to-customer relations, including selling products or services</p>
+                        <img src="./img/uses_1.png" alt="Commercial activity">
+                    </div>
+                    <div class="bot_uses-example">
+                        <h5>Counterterrorism and terrorism</h5>
+                        <p>Social media bots allow for faster searching and detection if online activity by using foreign language search terms</p>
+                        <img src="./img/uses_2.png" alt="Counterterrorism and terrorism">
+                    </div>
+                    <div class="bot_uses-example">
+                        <h5>Hate speech</h5>
+                        <p>Social media bots can propagate hate speech on social media platforms, making the subject matter appear to gain mainstream popularity</p>
+                        <img src="./img/uses_3.png" alt="Hate speech">
+                    </div>
+                    <div class="bot_uses-example">
+                        <h5>Information operations</h5>
+                        <p>The intentional spread of propaganda to sway public opinion, limit free speech and manipulate democratic processes and elections</p>
+                        <img src="./img/uses_4.png" alt="Information operations">
+                    </div>
+                    <div class="bot_uses-example">
+                        <h5>Entertainment</h5>
+                        <p>Social media bots are used on social media specifically to find, add, or create the illusion of online fame or popularity</p>
+                        <img src="./img/uses_5.png" alt="Entertainment">
+                    </div>
+                    <div class="bot_uses-example">
+                        <h5>Harassment</h5>
+                        <p>Social media bots can be used to overwhelm the user’s account to the point of deactivation</p>
+                        <img src="./img/uses_6.png" alt="Harassment">
+                    </div>
+                    <div class="bot_uses-example">
+                        <h5>Notifications</h5>
+                        <p>Social media bots provide automated watching capabilities to capture breaking news, ideas or events</p>
+                        <img src="./img/uses_7.png" alt="Notifications">
+                    </div>
+                    <div class="bot_uses-example">
+                        <h5>Social and civic engagement</h5>
+                        <p>Social media bots post to encourage and heighten civic engagement and participation</p>
+                        <img src="./img/uses_8.png" alt="Social and civic engagement">
+                    </div>
+                </div>
+            </div>
             
         </main>
         <footer>
-
+            <div class="copyright">
+                &copy;
+                Rubi Rojas
+            </div>
+            <div class="contact">
+                <span>Contact</span>
+                <span id="phone">Phone: 777-777-7777</span>
+                <span id="email">Email: ritchie@rit.edu</span>
+            </div>
         </footer>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

@@ -1,32 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
-        <title>References</title>
+        <title>Fake News</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./styles/fake_news.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gafata&family=Julius+Sans+One&family=Kaushan+Script&family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
-            <!--navbar-->
-            <nav>
-                <ul>
-                    <li><a href="./fake_news.html">Fake News</a></li>
-                    <li><a href="./bots.html">How do bots work?</a></li>
-
-                    <li><a href="./index.html">HOME</a></li>
-
-                    <li><a href="./how_to.html">How to recognize it?</a></li>
-                    <li><a href="./references.html">References</a></li>
-                </ul>
-            </nav>
+            <div id="title-small">
+                <h1>What's happening?</h1>
+                <div class="home-menu">
+                    <a href="./index.html"><i class="fa fa-home"></i></a>
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </header>
+
+        <nav>
+            <ul>
+                <li><a href="./fake_news.html">Fake News</a></li>
+                <li><a href="./bots.html">How do bots work?</a></li>
+                <li id="center">
+                    <div id="title">
+                        <h1>What's happening?</h1>
+                        <div class="home-menu">
+                            <a href="./index.html"><i class="fa fa-home"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./recognize_it.html">How to recognize it?</a></li>
+                <li><a href="./references.html">References</a></li>
+            </ul>
+        </nav>
         <main>
-            <h1>Fake News</h1>
-            <!--definition-->
-            <!--un poco de historia-->
-            <!--ejemplos mas conocidos-->
+            <h3>Fake News</h3>
+            <div class="what_is_it">
+                <h4>What is it?</h4>
+                <figure>
+                    <img src="./img/misinformation.jpg" alt="7 Types of Mis and Disinformation">
+                    <figcaption>Source: First Draft (2017)</figcaption>
+                </figure>
+                <p>Fake News entails misleading or entirely false information, capitalizes on the vulnerability of human perception. It often imitates traditional news formats, making it appear credible, and incorporates fabricated details loosely connected to actual events. Fake news strategically employs deceptive titles, images, and content to grab readers' attention and convince them of false narratives.</p>
+                <p>The primary goals of disseminating fake news are to boost engagement, such as clicks and shares, leading to increased advertising revenue and the potential to sway ideological beliefs. (Baptista & Gradim, 2020)</p>
+                <p>Beauvais (2022) defines fake news as “a type of online disinformation, with totally or partially false content, created intentionally to deceive and/or manipulate a specific audience, through a format that imitates a news or report (acquiring credibility), through false information that may or may not be associated with real events, with an opportunistic structure (title, image, content) to attract the readers’ attention and to persuade them to believe in falsehood, in order to obtain more clicks and shares, therefore, higher advertising revenue and/or ideological gain.”</p>
+            </div>
+            <div class="examples">
+                <h4>Examples</h4>
+                <p>This collection of examples serves as a stark reminder of the power and potential harm of misinformation in our digitally interconnected world. From fabricated headlines to misleading narratives, these instances shed light on the diverse ways in which fake news can distort reality and influence public perception, underlining the critical importance of media literacy and responsible information consumption in today's society.</p>
+                <div class="images">
+                    <figure>
+                        <img src="./img/example1.webp" alt="Pope Francis endorsed Donald Trump for president">
+                        <figcaption>Source: <a href="https://www.snopes.com/fact-check/pope-francis-donald-trump-endorsement/">Pope Francis endorsed Donald Trump for president</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/example2.png" alt="Inishturk pier.">
+                        <figcaption>Source: <a href="https://www.thejournal.ie/ireland-officially-accepting-trump-refugees-inishturk-facts-3074777-Nov2016/">Ireland is now officially accepting Trump refugees from America</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/example3.webp" alt="ISIS operative.">
+                        <figcaption>Source: <a href="https://www.snopes.com/fact-check/isis-leader-supports-hillary/">ISIS Leader Calls for American Muslim Voters to Support Hillary Clinton</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/example4.webp" alt="Speaker of the House Mike Johnson">
+                        <figcaption>Source: <a href="https://www.snopes.com/fact-check/mike-johnson-duty-to-birth/">Speaker of the House Mike Johnson said "Every American woman has a duty to birth at least one able-bodied worker</a></figcaption>
+                    </figure>
+                </div>
+                <p>By recognizing the telltale signs of misinformation and actively engaging in fact-checking, we can collectively safeguard the integrity of our public discourse and make more informed, responsible choices as consumers of news and information. The battle against fake news remains ongoing, but with awareness and discernment, we can fortify our defenses against its deceptive influence.</p>
+            </div>
         </main>
         <footer>
-
+            <div class="copyright">
+                &copy;
+                Rubi Rojas
+            </div>
+            <div class="contact">
+                <span>Contact</span>
+                <span id="phone">Phone: 777-777-7777</span>
+                <span id="email">Email: ritchie@rit.edu</span>
+            </div>
         </footer>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
