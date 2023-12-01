@@ -215,12 +215,8 @@ figure{
 .examples figure{
     width: 250px;
 }
-
-@media screen and (min-width: 750) {
-    footer{
-        position: absolute;
-        bottom: 0;
-    }
+.link{
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 750px) {
@@ -280,11 +276,17 @@ figure{
     .fa{
         color: rgb(255, 255, 255);
     }
+    p{
+        font-size: 1.25em;
+    }
     /*recognize it*/
     .list-content, .beyond .list-content, .date .list-content{
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+    .list-content ul{
+        font-size: 1.25em;
     }
     
 }
