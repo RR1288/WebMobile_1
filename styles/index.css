@@ -74,6 +74,7 @@ p {
     line-height: 1.5em;
     text-align: justify;
     font-family: 'Gafata', sans-serif;
+    font-size: 1.5em;
 }
 
 main {
@@ -81,11 +82,6 @@ main {
     margin: auto;
     padding: 10px 25px;
 }
-
-
-
-
-
 
 h1, h3, h4 {
     font-family: 'Julius Sans One', sans-serif;
@@ -141,6 +137,91 @@ nav ul li:hover {
     flex-direction: row-reverse;
 }
 
+/*
+bots
+*/
+.right{
+   
+    text-align: center;
+    width: 300px;
+
+}
+
+.definition .right img{
+    width: 290px;
+    margin: 10px;
+}
+
+.definition{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.accounts{
+    text-align: center;
+
+}
+.accounts img{
+    width:95%;
+}
+
+/*recognize it*/
+.list-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+ .beyond .list-content, .date .list-content{
+    flex-direction: row-reverse;
+}
+.list-content img{
+    height: 175px;
+    margin: 10px;
+}
+figure{
+    text-align: center;
+}
+.list-content ul{
+    margin: 20px;
+    font-family: 'Gafata', sans-serif;
+    font-size: 1.5em;
+}
+
+/*fake news*/
+.what_is_it img{
+    width: 750px;
+}
+
+.what_is_it figure{
+    float: right;
+    padding: 25px;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.examples img{
+    width: 240px;
+    margin: 10px;
+}
+.examples figure{
+    width: 250px;
+}
+
+@media screen and (min-width: 750) {
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
 
 @media screen and (max-width: 750px) {
     #hamburger {
@@ -199,6 +280,32 @@ nav ul li:hover {
     .fa{
         color: rgb(255, 255, 255);
     }
+    /*recognize it*/
+    .list-content, .beyond .list-content, .date .list-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     
+}
 
+@media screen and (max-width: 1250px) {
+    .definition{
+        flex-direction: column; 
+    }
+    .what_is_it img{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 1450px) {
+    .what_is_it{
+        display: flex;
+        flex-direction: column; 
+    }
+    .what_is_it figure{
+        float: none;
+        padding: 25px;
+        align-self: center;
+    }
 }
