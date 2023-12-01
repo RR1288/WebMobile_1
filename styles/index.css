@@ -83,7 +83,7 @@ main {
     padding: 10px 25px;
 }
 
-h1, h3, h4 {
+h1, h3, h4, h5 {
     font-family: 'Julius Sans One', sans-serif;
 }
 
@@ -100,8 +100,8 @@ h3 {
     margin-top: 30px;
 }
 
-h4 {
-    margin-top: 50px;
+h4, h5{
+    margin: 40px 20px;
     font-size: 1.25em;
 }
 
@@ -166,6 +166,33 @@ bots
     width:95%;
 }
 
+.bot_uses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.bot_uses_example{
+    width: 30%;
+    background-color: #0d6684;
+    margin: 10px;
+    border-top-right-radius: 20% 10%;
+    border-bottom-right-radius: 20% 10%;
+    border-top-left-radius: 20% 10%;
+    border-bottom-left-radius: 20% 10%;
+}
+.bot_uses_example img{
+    width: 90%;
+    border-radius: 10%;
+    margin-bottom: 25px;
+}
+.bot_uses_example p{
+    font-size: 1.25em;
+    text-align: center;
+}
+
 /*recognize it*/
 .list-content{
     display: flex;
@@ -219,6 +246,36 @@ figure{
     word-wrap: break-word;
 }
 
+
+
+@media screen and (max-width: 1450px) {
+    .what_is_it{
+        display: flex;
+        flex-direction: column; 
+    }
+    .what_is_it figure{
+        float: none;
+        padding: 25px;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .definition{
+        flex-direction: column; 
+    }
+    .what_is_it img{
+        width: 100%;
+    }
+    .bot_uses_example{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .bot_uses{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 750px) {
     #hamburger {
@@ -289,26 +346,8 @@ figure{
     .list-content ul{
         font-size: 1.25em;
     }
-    
-}
-
-@media screen and (max-width: 1250px) {
-    .definition{
-        flex-direction: column; 
-    }
-    .what_is_it img{
-        width: 100%;
+    .bot_uses_example{
+        width: 90%;
     }
     
-}
-@media screen and (max-width: 1450px) {
-    .what_is_it{
-        display: flex;
-        flex-direction: column; 
-    }
-    .what_is_it figure{
-        float: none;
-        padding: 25px;
-        align-self: center;
-    }
 }
