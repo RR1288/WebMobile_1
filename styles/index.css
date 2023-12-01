@@ -219,6 +219,7 @@ figure{
     word-wrap: break-word;
 }
 
+
 @media screen and (max-width: 750px) {
     #hamburger {
         display: block;
